@@ -1,14 +1,10 @@
 import { Component, Inject, forwardRef } from '@angular/core';
-import { DataTable } from './table.component';
-import { HEADER_TEMPLATE } from './header.template';
-import { HEADER_STYLE } from "./header.style";
-
+import { DataTable } from '../table/table.component';
 
 @Component({
-  moduleId: module.id,
   selector: 'data-table-header',
-  template: HEADER_TEMPLATE,
-  styles: [HEADER_STYLE],
+  templateUrl: './header.component.html',
+  styleUrls: ['./header.component.css'],
   host: {
     '(document:click)': '_closeSelector()'
   }

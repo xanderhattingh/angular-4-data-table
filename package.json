@@ -1,26 +1,37 @@
 {
-  "name": "angular-4-data-table",
-  "version": "0.4.1",
-  "description": "An Angular 5 data table, with pagination, sorting, expandable rows etc.",
+  "name": "angular5-data-table",
+  "version": "0.5.1",
+  "description": "An accessible Angular 5 data table, with pagination, sorting, expandable rows etc.",
+  "author": "Bruno Bruzzano <brunano21@gmail.com>",
+  "license": "MIT",
   "keywords": [
     "angular",
-    "angular4",
-    "Angular 4",
-    "ng2",
+    "angular5",
+    "Angular 5",
+    "ng",
+    "ng5",
     "datatable",
     "data-table",
     "data table",
-    "pagination"
+    "pagination",
+    "sorting",
+    "accessibility"
   ],
   "main": "src/index.ts",
   "typings": "src/index.ts",
-  "scripts": {},
+  "scripts": {
+    "lint": "tslint -c tslint.json -t stylish src/**/*.ts",
+    "aot": "ngc -p tsconfig.json",
+    "packagr": "ng-packagr -p ng-package.json"
+  },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/brunano21/angular-4-data-table.git"
   },
-  "author": "Bruno Bruzzano <brunano21@gmail.com>",
-  "license": "MIT",
+  "peerDependencies": {
+    "@angular/common": ">= 5.0.0",
+    "@angular/core": ">= 5.0.0"
+  },
   "dependencies": {
     "@angular/animations": "^5.0.0",
     "@angular/common": "^5.0.0",
@@ -42,7 +53,7 @@
     "@types/jasmine": "~2.5.53",
     "@types/jasminewd2": "~2.0.2",
     "@types/node": "~6.0.60",
-    "codelyzer": "~3.2.0",
+    "codelyzer": "^3.2.0",
     "jasmine-core": "~2.6.2",
     "jasmine-spec-reporter": "~4.1.0",
     "karma": "~1.7.0",
@@ -51,9 +62,10 @@
     "karma-coverage-istanbul-reporter": "^1.2.1",
     "karma-jasmine": "~1.1.0",
     "karma-jasmine-html-reporter": "^0.2.2",
+    "ng-packagr": "^1.6.0",
     "protractor": "~5.1.2",
     "ts-node": "~3.2.0",
-    "tslint": "~5.7.0",
+    "tslint": "^5.7.0",
     "typescript": "~2.4.2"
   },
   "false": {},

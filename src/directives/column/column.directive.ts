@@ -1,7 +1,6 @@
 import { Directive, Input, ContentChild, OnInit } from '@angular/core';
-import { DataTableRow } from './row.component';
-import { CellCallback } from '../types/cell-callback.type';
-
+import { DataTableRow } from '../../components/row/row.component';
+import { CellCallback } from '../../types/cell-callback.type';
 
 @Directive({
   selector: 'data-table-column'

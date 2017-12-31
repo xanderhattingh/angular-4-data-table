@@ -2,11 +2,11 @@ import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { FormsModule } from '@angular/forms';
 
-import { DataTable} from './components/table.component';
-import { DataTableColumn } from './components/column.component';
-import { DataTableRow } from './components/row.component';
-import { DataTablePagination } from './components/pagination.component';
-import { DataTableHeader } from './components/header.component';
+import { DataTable} from './components/table/table.component';
+import { DataTableColumn } from './directives/column/column.directive';
+import { DataTableRow } from './components/row/row.component';
+import { DataTablePagination } from './components/pagination/pagination.component';
+import { DataTableHeader } from './components/header/header.component';
 
 import { PixelConverter } from './utils/px';
 import { Hide } from './utils/hide';

@@ -1,4 +1,3 @@
-export const PAGINATION_STYLE = `
 .pagination-box {
     position: relative;
     margin-top: -10px;
@@ -43,4 +42,3 @@ export const PAGINATION_STYLE = `
     color: gray;
     font-size: 12px;
 }
-`;

@@ -1,16 +1,12 @@
 import {
     Component, Input, Inject, forwardRef, Output, EventEmitter, OnDestroy
 } from '@angular/core';
-import { DataTable } from './table.component';
-import { ROW_TEMPLATE } from './row.template';
-import { ROW_STYLE } from "./row.style";
-
+import { DataTable } from '../table/table.component';
 
 @Component({
-    moduleId: module.id,
     selector: '[dataTableRow]',
-    template: ROW_TEMPLATE,
-    styles: [ROW_STYLE]
+    templateUrl: './row.component.html',
+    styleUrls: ['./row.component.css']
 })
 export class DataTableRow implements OnDestroy {
 
@@ -57,5 +53,5 @@ export class DataTableRow implements OnDestroy {
         this.selected = false;
     }
 
-    private _this = this; // FIXME is there no template keyword for this in angular 2?
+    public _this = this;
 }
