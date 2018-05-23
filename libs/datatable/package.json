@@ -1,7 +1,7 @@
 {
   "name": "angular5-data-table",
   "description": "This library contains an Angualar5-compatible Datatable component.",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "private": false,
   "license": "MIT",
   "repository": "https://github.com/brunano21/angular-4-data-table",

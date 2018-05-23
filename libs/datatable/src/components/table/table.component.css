@@ -17,12 +17,6 @@
   border-bottom: 2px solid #dee2e6;
 }
 
-:host /deep/ .data-table > thead > tr > th,
-:host /deep/ .data-table > thead > tr > td {
-  background-color: #555555;
-  color: #ffffff
-}
-
 /* I can't use the bootstrap striped table, because of the expandable rows */
 :host /deep/ .row-odd {
   background-color: #F6F6F6;
@@ -79,10 +73,6 @@
   -moz-user-select: none;
   -ms-user-select: none;
   text-align: left;
-}
-
-.column-header.sortable button:focus {
-  outline: #cd2027 solid 2px;
 }
 
 .column-header .column-sort-icon {
