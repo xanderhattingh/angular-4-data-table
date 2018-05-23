@@ -89,7 +89,7 @@ The component is highly configurable and customizable through many *Input*s and 
 * `title` (`string` | default: `''`) table's name - it's highly recommend it's set for accessibility reasons as this will provide a better experience when interacting with the component, especially through a SR.
 * `showTitle` (`boolean` | default: `true`): if `false`, the title is not shown into the component. Useful when want the header component visible (with its Reload and Coulumn Selector buttons), but not the title.
 * `items` (`JsonObject[]` | default: `[]`) table data to show.
-* `itemsCount` (`number` | default: `0`) items's count.
+* `itemCount` (`number` | default: `0`) items's count.
 * `header` (`boolean` | default: `true`) show/hide the table header sub-component - this holds the table name and two buttons (_reload table_ and _column selector_).
 * `pagination` (`boolean` | default: ) enable pagination. If `true`, pagination controls are shown at the bottom of the table.
 * `indexColumn` (`boolean` | default: `true`) when `true` the table shows a 0-indexed column.
