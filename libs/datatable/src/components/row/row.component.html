@@ -1,4 +1,4 @@
-<tr class="data-table-row"
+<tr (click)="expanded = !expanded;" class="data-table-row"
     [title]="getTooltip()"
     [style.background-color]="dataTable.getRowColor(item, index, _this)"
     [class.row-odd]="index % 2 === 0"
@@ -6,7 +6,7 @@
     [class.selected]="selected"
     [class.clickable]="dataTable.selectOnRowClick">
   <td [hide]="!dataTable.expandColumnVisible">
-    <button (click)="expanded = !expanded; $event.stopPropagation()" class="row-expand-button"
+    <button (click)="expanded = !expanded;" class="row-expand-button"
          [attr.aria-expanded]="expanded"
          [title]="dataTable.labels.expandRow.replace('{cell_content}', ''+item[dataTable.primaryColumn])"
          [attr.aria-label]="dataTable.labels.expandRow.replace('{cell_content}', ''+item[dataTable.primaryColumn])">
